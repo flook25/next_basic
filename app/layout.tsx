@@ -9,12 +9,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <NavLinks />
-        
-        <div>Title of Main Layout</div>
-        <div>{children}</div>
-      </body>
-    </html>
-  );
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+      </head>
+
+
+          <body>
+            <NavLinks />
+
+            <div>Title of Main Layout</div>
+            <div>{children}</div>
+          </body>
+        </html>
+        );
 }
